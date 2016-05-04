@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.mygeotrust.indoor.MainActivity">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/map_view_mygt"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"/>
+
+    <RadioGroup
+        android:id="@+id/radio_floor_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:id="@+id/radio_floor_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Floor 3"/>
+
+        <RadioButton
+            android:id="@+id/radio_floor_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Floor 2"/>
+
+        <RadioButton
+            android:id="@+id/radio_floor_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Floor 1"/>
+
+
+    </RadioGroup>
+</RelativeLayout>
